@@ -114,7 +114,7 @@
 -    **ngAfterContentChecked**
 	    -   **When it’s called**: Called after every check of the component's or directive's content.
 	    -   **Usage**: Act upon changes in the projected content.
-		   -   **Signature**: `ngAfterContentChecked(): void`
+		-   **Signature**: `ngAfterContentChecked(): void`
     
 -    **ngAfterViewInit**
 	    -   **When it’s called**: Called once after Angular initializes the component’s views and child views.
@@ -136,6 +136,16 @@
 -   **Built-in Pipes**: `DatePipe`, `CurrencyPipe`, `UpperCasePipe`, etc., used for transforming data in templates.
 -   **Custom Pipes**: User-defined pipes for specific transformations.
 
-### 11. **Angular CLI**
+### 11. **View Encapsulation**
+-   **Native:** The component does not inherit styles from the main HTML. Styles defined in this component's @Component decorator are only applicable to this component.
+-   **Emulated (Default):** The component inherits styles from the main HTML. Styles set in the @Component decorator are only applicable to this component.
+-   **None:** The component's styles are propagated back to the main HTML and therefore accessible to all components on the page. Be wary of programs that have None and Native components. Styles will be repeated in all components with Native encapsulation if they have No encapsulation.
+
+### 12. **ProvidedIn Injectable**
+-   **root** : The application-level injector in most apps.
+-   **platform** : A special singleton platform injector shared by all applications on the page.
+-   **any** : Provides a unique instance in each lazy loaded module while all eagerly loaded modules share one instance. This option is DEPRECATED.
+
+### 13. **Angular CLI**
 
 -   **Commands**: `ng generate`, `ng serve`, `ng build`, etc., used for generating components, services, etc., and for serving and building the application.
