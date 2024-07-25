@@ -101,3 +101,31 @@ console.log(add5(3)); // Output: 8
     const frozenObject = Object.freeze(person);
     frozenObject.age = 40; // This will not change the age property
     ```
+
+### 7. Call, Bind, and Apply in JavaScript
+-  **Call**
+
+	-   Invokes a function immediately and sets the `this` keyword to the provided value.
+	-   Accepts arguments as a comma-separated list.
+- **Apply**
+	-   Similar to call but accepts arguments as an array.
+
+- **Bind**
+	-   Creates a new function with a bound `this` value.
+	-   Returns a new function that can be called later.
+
+- **Tip:**
+	- call -> starts with c then common separated.
+	- apply -> stares with a then array.
+
+**Example:**
+```javascript
+function greet() {
+  console.log(`hello ${this.name}`)
+}
+
+greet.call({name: 'mani')} // Output: Hello mani
+greet.apply({name: 'world')} // Output: Hello world
+const newfn = greet.bind({name: 'manikandan'});
+newfn() // Output: Hello manikandan
+```
