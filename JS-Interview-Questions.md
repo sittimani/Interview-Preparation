@@ -129,3 +129,15 @@ greet.apply({name: 'world')} // Output: Hello world
 const newfn = greet.bind({name: 'manikandan'});
 newfn() // Output: Hello manikandan
 ```
+### 8. Implicit Type Conversion (Type Coercion) in JavaScript
+
+JavaScript automatically converts values from one type to another when needed.  
+This is called **implicit type coercion**.
+
+**Example:**
+Happens when using `+` with a string.
+
+```javascript
+"5" + 1      // "51"
+[] + "hi"    // "hi"
+```
