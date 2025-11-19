@@ -6,6 +6,8 @@ This document provides a summary of essential JavaScript and ES6 concepts that a
 - **Variables**: Use `let` and `const` instead of `var` for block scope. `let` is used for variables that may change, while `const` is for constants.
 - **Data Types**: Understand the basic data types: `undefined`, `null`, `boolean`, `number`, `string`, `object`, and `symbol`.
 - **Type Coercion**: JavaScript automatically converts data types. Understand how type coercion works with `==` (abstract equality) and `===` (strict equality).
+- **Primitive data types**: are basic, immutable values stored directly in memory (stack). **Example:** Number, String, Boolean, Undefined, Null, Symbol, BigInt
+- **Non-Primitive Data Types**: are reference types, stored in the heap, and mutable.  **Example:** Object, Array, Function, Date, RegExp, Map, Set, WeakMap, WeakSet
 
 ## Functions
 
